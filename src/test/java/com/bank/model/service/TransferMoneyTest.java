@@ -1,16 +1,16 @@
-package com.bank.services;
+package com.bank.model.service;
 
-import com.bank.models.Account;
-import com.bank.models.Receipt;
+import com.bank.model.Account;
+import com.bank.model.Receipt;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AccountServiceTest {
+public class TransferMoneyTest {
 
-    private AccountService accountService;
+    private TransferMoney transferMoney;
 
-    public AccountServiceTest() {
-        accountService = new AccountService();
+    public TransferMoneyTest() {
+        transferMoney = new TransferMoney();
     }
 
     @Test
@@ -18,7 +18,7 @@ public class AccountServiceTest {
         Account accountFrom = new Account("123456", 2000d);
         Account accountTo = new Account("654321", 3000d);
 
-        accountService.transfer(accountFrom, accountTo, 200d);
+        transferMoney.transfer(accountFrom, accountTo, 200d);
 
         Assertions.assertEquals(1800d, accountFrom.getBalance());
         Assertions.assertEquals(3200d, accountTo.getBalance());
@@ -26,7 +26,7 @@ public class AccountServiceTest {
 
     @Test
     public void testTransferMoneyWithReceiptSuccess() {
-        Receipt receipt = accountService.transfer(
+        Receipt receipt = transferMoney.transfer(
             new Account("123456", 2000d),
             new Account("654321", 3000d),
             200d);
@@ -37,7 +37,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureAccountFromNull() {
         Assertions.assertThrows(IllegalArgumentException.class,
-            () -> accountService.transfer(
+            () -> transferMoney.transfer(
                     null,
                     new Account("654321", 3000d),
                     200d)
@@ -47,7 +47,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureAccountToNull() {
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> accountService.transfer(
+                () -> transferMoney.transfer(
                         new Account("123456", 2000d),
                         null,
                         200d)
@@ -57,7 +57,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureAccountFromAndAccountToNull() {
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> accountService.transfer(
+                () -> transferMoney.transfer(
                         null,
                         null,
                         200d)
@@ -67,7 +67,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureAccountFromAndAccountToAndValueNull() {
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> accountService.transfer(
+                () -> transferMoney.transfer(
                         null,
                         null,
                         0d)
@@ -77,7 +77,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureZeroValue() {
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> accountService.transfer(
+                () -> transferMoney.transfer(
                         new Account("123456", 2000d),
                         new Account("654321", 3000d),
                         0d)
@@ -87,7 +87,7 @@ public class AccountServiceTest {
     @Test
     public void testTransferMoneyFailureNullValue() {
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> accountService.transfer(
+                () -> transferMoney.transfer(
                         new Account("123456", 2000d),
                         new Account("654321", 3000d),
                         null)

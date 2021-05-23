@@ -1,4 +1,4 @@
-package com.bank.models;
+package com.bank.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

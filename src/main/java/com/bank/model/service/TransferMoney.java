@@ -1,9 +1,9 @@
-package com.bank.services;
+package com.bank.model.service;
 
-import com.bank.models.Account;
-import com.bank.models.Receipt;
+import com.bank.model.Account;
+import com.bank.model.Receipt;
 
-public class AccountService {
+public class TransferMoney {
 
     public Receipt transfer(Account accountFrom, Account accountTo, Double value) {
         if (accountFrom == null || accountTo == null)

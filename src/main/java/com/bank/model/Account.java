@@ -1,4 +1,6 @@
-package com.bank.models;
+package com.bank.model;
+
+import java.util.Objects;
 
 public class Account {
     private String number;
@@ -57,5 +59,18 @@ public class Account {
                 "number='" + number + '\'' +
                 ", balance=" + balance +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Account)) return false;
+        Account account = (Account) o;
+        return account.number.equals(number);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number);
     }
 }
