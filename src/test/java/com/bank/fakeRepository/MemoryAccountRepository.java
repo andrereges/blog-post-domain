@@ -7,19 +7,19 @@ import java.util.Hashtable;
 
 public class MemoryAccountRepository implements Repository<Account, String> {
 
-    private Hashtable<String, Account> hashtable;
+    private Hashtable<String, Account> dict;
 
     public MemoryAccountRepository() {
-        hashtable = new Hashtable<>();
+        dict = new Hashtable<>();
     }
 
     @Override
     public Account get(String identity) {
-        return hashtable.get(identity);
+        return dict.get(identity);
     }
 
     @Override
     public void add(Account entity) {
-        hashtable.put(entity.getNumber(), entity);
+        dict.put(entity.getNumber(), entity);
     }
 }

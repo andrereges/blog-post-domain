@@ -1,3 +1,7 @@
-/var/projects/Bank/src/main/java/com/bank/model/service/TransferMoneyService.java
+/var/projects/Bank/src/main/java/com/bank/app.java
+/var/projects/Bank/src/main/java/com/bank/dto/TransferDto.java
+/var/projects/Bank/src/main/java/com/bank/application/TransferMoneyService.java
+/var/projects/Bank/src/main/java/com/bank/repository/Repository.java
 /var/projects/Bank/src/main/java/com/bank/model/Account.java
+/var/projects/Bank/src/main/java/com/bank/model/service/TransferMoney.java
 /var/projects/Bank/src/main/java/com/bank/model/Receipt.java
