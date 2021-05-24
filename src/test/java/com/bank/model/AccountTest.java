@@ -42,6 +42,12 @@ public class AccountTest {
     }
 
     @Test
+    public void testAccountFailureBalanceNull() {
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> createAccount("123456", null));
+    }
+
+    @Test
     public void testAccountFailureNumberLess6Digits() {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> createAccount("12345", 2000d));
@@ -105,5 +111,15 @@ public class AccountTest {
     public void testWithdrawFailureUnderLimit() {
         Assertions.assertThrows(IllegalArgumentException.class, () ->
                 createAccount().withdraw(2001d));
+    }
+
+    @Test
+    public void testAccountToStringSuccess() {
+        Account account = createAccount();
+
+        Assertions.assertEquals("Account{" +
+                "number='" + account.getNumber() + '\'' +
+                ", balance=" + account.getBalance() +
+                '}', account.toString());
     }
 }

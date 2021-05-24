@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Bank,com.bank.model,Receipt,0,19,0,0,0,6,0,2,0,2
+Bank,com.bank.model,Account,28,115,4,14,5,29,4,14,2,7
+Bank,com.bank.application,TransferMoneyService,0,43,0,0,0,10,0,2,0,2
+Bank,com.bank,app,4,0,0,0,2,0,2,0,2,0
+Bank,com.bank.dto,TransferDto,0,24,0,0,0,10,0,7,0,7
+Bank,com.bank.model.service,TransferMoney,0,39,0,8,0,10,0,6,0,2

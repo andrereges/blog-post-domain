@@ -1,2 +1,4 @@
-/var/projects/Bank/src/test/java/com/bank/services/AccountServiceTest.java
-/var/projects/Bank/src/test/java/com/bank/models/AccountTest.java
+/var/projects/Bank/src/test/java/com/bank/fakeRepository/MemoryAccountRepository.java
+/var/projects/Bank/src/test/java/com/bank/model/AccountTest.java
+/var/projects/Bank/src/test/java/com/bank/model/service/TransferMoneyTest.java
+/var/projects/Bank/src/test/java/com/bank/application/TransferMoneyServiceTest.java

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TransferMoneyService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Bank</a> &gt; <a href="index.source.html" class="el_package">com.bank.application</a> &gt; <span class="el_source">TransferMoneyService.java</span></div><h1>TransferMoneyService.java</h1><pre class="source lang-java linenums">package com.bank.application;
+
+import com.bank.dto.TransferDto;
+import com.bank.model.Account;
+import com.bank.model.Receipt;
+import com.bank.model.service.TransferMoney;
+import com.bank.repository.Repository;
+
+public class TransferMoneyService {
+
+    private Repository&lt;Account, String&gt; repository;
+
+<span class="fc" id="L13">    public TransferMoneyService(Repository&lt;Account, String&gt; repository) {</span>
+<span class="fc" id="L14">        this.repository = repository;</span>
+<span class="fc" id="L15">    }</span>
+
+    public String transfer(TransferDto dto) {
+<span class="fc" id="L18">        Account accountFrom = repository.get(dto.getAccountFrom());</span>
+<span class="fc" id="L19">        Account accountTo = repository.get(dto.getAccountTo());</span>
+
+<span class="fc" id="L21">        TransferMoney modelTransfer = new TransferMoney();</span>
+<span class="fc" id="L22">        Receipt receipt = modelTransfer.transfer(accountFrom, accountTo, dto.getValue());</span>
+
+<span class="fc" id="L24">        repository.add(accountFrom);</span>
+<span class="fc" id="L25">        repository.add(accountTo);</span>
+
+<span class="fc" id="L27">        return receipt.getTransactionId();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
