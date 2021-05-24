@@ -1,0 +1,4 @@
+com/bank/fakeRepository/MemoryAccountRepository.class
+com/bank/model/service/TransferMoneyTest.class
+com/bank/application/TransferMoneyServiceTest.class
+com/bank/model/AccountTest.class

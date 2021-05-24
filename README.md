@@ -14,3 +14,7 @@ Password: admin
 New Password: sonar
 
 mvn sonar:sonar -Dsonar.projectKey=aulateste -Dsonar.host.url=http://localhost:9000 -Dsonar.login=c2fb543a07bc5b66e6de03e89d0c2c835983f60c
+
+# Pitest - Mutant Test
+mvn org.pitest:pitest-maven:mutationCoverage
+Bank/target/pit-reports/202105232255/index.html

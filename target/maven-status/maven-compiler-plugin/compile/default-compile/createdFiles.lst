@@ -1,0 +1,7 @@
+com/bank/repository/Repository.class
+com/bank/application/TransferMoneyService.class
+com/bank/model/service/TransferMoney.class
+com/bank/model/Account.class
+com/bank/model/Receipt.class
+com/bank/dto/TransferDto.class
+com/bank/app.class
