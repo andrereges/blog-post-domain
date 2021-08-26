@@ -1,4 +1,6 @@
-com/bank/fakeRepository/MemoryAccountRepository.class
-com/bank/model/service/TransferMoneyTest.class
-com/bank/application/TransferMoneyServiceTest.class
-com/bank/model/AccountTest.class
+br/com/andre/blog/post/services/PostPostServiceImplTest.class
+br/com/andre/blog/post/utils/PostMemoryDBRepository.class
+br/com/andre/blog/post/models/PostTest.class
+br/com/andre/blog/post/utils/PostCreator.class
+br/com/andre/blog/post/models/AuthorTest.class
+br/com/andre/blog/post/utils/AuthorCreator.class

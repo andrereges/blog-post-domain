@@ -1,0 +1,39 @@
+{
+  "content": [
+    {
+      "id": "e6ab0907-7051-4aee-a116-b5b5fe0f8d89",
+      "ownerRef": "Riggão",
+      "emailFrom": "riggao@gmail.com",
+      "emailTo": "andreriggs90@gmail.com",
+      "subject": "Test MS Email",
+      "text": "This is text content",
+      "sendDateEmail": "2021-08-16T07:04:10.580768",
+      "statusEmail": "SENT"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 5,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 1,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "size": 5,
+  "first": true,
+  "numberOfElements": 1,
+  "empty": false
+}

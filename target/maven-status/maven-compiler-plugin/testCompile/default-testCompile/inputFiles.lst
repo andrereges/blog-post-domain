@@ -1,4 +1,6 @@
-/var/projects/Bank/src/test/java/com/bank/fakeRepository/MemoryAccountRepository.java
-/var/projects/Bank/src/test/java/com/bank/model/AccountTest.java
-/var/projects/Bank/src/test/java/com/bank/model/service/TransferMoneyTest.java
-/var/projects/Bank/src/test/java/com/bank/application/TransferMoneyServiceTest.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/models/AuthorTest.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/utils/AuthorCreator.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/models/PostTest.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/utils/PostMemoryDBRepository.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/utils/PostCreator.java
+/var/projects/java-na-pedreiragem/blog-post-domain/src/test/java/br/com/andre/blog/post/services/PostPostServiceImplTest.java

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.com.andre.blog.post.services.PostPostServiceImplTest" time="0.672" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/projects/java-na-pedreiragem/blog-post-domain/target/test-classes:/var/projects/java-na-pedreiragem/blog-post-domain/target/classes:/home/andre/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/home/andre/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/andre/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/andre/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/andre/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/andre/.m2/repository/org/pitest/pitest-junit5-plugin/0.14/pitest-junit5-plugin-0.14.jar:/home/andre/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/andre/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/home/andre/.m2/repository/org/mockito/mockito-core/3.8.0/mockito-core-3.8.0.jar:/home/andre/.m2/repository/net/bytebuddy/byte-buddy/1.10.20/byte-buddy-1.10.20.jar:/home/andre/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.20/byte-buddy-agent-1.10.20.jar:/home/andre/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/home/andre/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/home/andre/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/home/andre/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/home/andre/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/home/andre/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/home/andre/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/home/andre/.m2/repository/junit/junit/4.13/junit-4.13.jar:/home/andre/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/andre/.m2/repository/org/junit/vintage/junit-vintage-engine/5.7.1/junit-vintage-engine-5.7.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/var/projects/java-na-pedreiragem/blog-post-domain/target/surefire/surefirebooter4688808512199340875.jar /var/projects/java-na-pedreiragem/blog-post-domain/target/surefire 2021-08-17T22-39-02_839-jvmRun1 surefire13752005986395809662tmp surefire_010565867638986319989tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/var/projects/java-na-pedreiragem/blog-post-domain/target/test-classes:/var/projects/java-na-pedreiragem/blog-post-domain/target/classes:/home/andre/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/home/andre/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/andre/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/andre/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/andre/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/andre/.m2/repository/org/pitest/pitest-junit5-plugin/0.14/pitest-junit5-plugin-0.14.jar:/home/andre/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/andre/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/home/andre/.m2/repository/org/mockito/mockito-core/3.8.0/mockito-core-3.8.0.jar:/home/andre/.m2/repository/net/bytebuddy/byte-buddy/1.10.20/byte-buddy-1.10.20.jar:/home/andre/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.20/byte-buddy-agent-1.10.20.jar:/home/andre/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-java/6.8.1/cucumber-java-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-core/6.8.1/cucumber-core-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-gherkin/6.8.1/cucumber-gherkin-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.8.1/cucumber-gherkin-messages-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/messages/13.1.0/messages-13.1.0.jar:/home/andre/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/home/andre/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/home/andre/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/home/andre/.m2/repository/io/cucumber/cucumber-plugin/6.8.1/cucumber-plugin-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/docstring/6.8.1/docstring-6.8.1.jar:/home/andre/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/home/andre/.m2/repository/io/cucumber/create-meta/2.0.2/create-meta-2.0.2.jar:/home/andre/.m2/repository/io/cucumber/cucumber-junit/6.8.1/cucumber-junit-6.8.1.jar:/home/andre/.m2/repository/junit/junit/4.13/junit-4.13.jar:/home/andre/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/andre/.m2/repository/org/junit/vintage/junit-vintage-engine/5.7.1/junit-vintage-engine-5.7.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/andre"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/var/projects/java-na-pedreiragem/blog-post-domain"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/var/projects/java-na-pedreiragem/blog-post-domain/target/surefire/surefirebooter4688808512199340875.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="user.name" value="andre"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.11.0-25-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/andre/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="/var/projects/java-na-pedreiragem/lib"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="https.protocols" value="TLSv1.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testFindPostSuccess" classname="br.com.andre.blog.post.services.PostPostServiceImplTest" time="0.001"/>
+  <testcase name="testFindPostSuccessMockito" classname="br.com.andre.blog.post.services.PostPostServiceImplTest" time="0.014"/>
+</testsuite>
